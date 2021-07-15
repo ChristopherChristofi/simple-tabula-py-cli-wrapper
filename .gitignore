@@ -15,5 +15,4 @@ build/
 
 *.csv
 *.pdf
-
-notused.txt
+*.log
