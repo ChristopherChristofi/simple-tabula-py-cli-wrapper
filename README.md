@@ -1,32 +1,16 @@
-# simple-PDF-scrape-converter
+# Tabula-py-cli-wrapper
 
 ## Description:
 
-Using Flask and werkzeug upload, a simple upload form application that converts PDF file formatted tables to csv speadsheets using tabula-py pdf reader.
+I had to group together an assortment of business documents; with invoices originating from more than one source, of which one persisted of tabular sales data in PDF format: making it difficult to collate such data with all the other sales data. [tabula-py](https://tabula-py.readthedocs.io/en/latest/) proved most useful and made it easy to convert the tabular PDF into a spreadsheet. In this repo I have put together a simple command-line wrapper for the tabula-py library functionality, of which I used to make my work process a bit simpler.
 
-## Features:
+## Usage:
 
-- Simple upload submit
-- PDF reader
-- Page selection
-- File type filtering
-- csv file format return
+```sh
+tabulapycliwrapper --pdf-data INPUT_DATA_FILE.pdf --output-format OUTPUT_DATA.csv --page 2
+```
 
 ## Dependencies:
 
-- flask
-- werkzeug
 - tabula-py
-
-## Top-level Directory:
-
-    .
-    ├── __pycache__
-    ├── static/styles
-    ├── data/ {output}
-    ├── templates
-    ├── app.py
-    ├── gitignore
-    ├── constraints
-    ├── LICENSE
-    └── README.md
+- click
