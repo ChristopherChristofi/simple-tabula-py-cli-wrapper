@@ -7,7 +7,7 @@ I had to group together an assortment of business documents; with invoices origi
 ## Usage:
 
 ```sh
-tabulapycliwrapper --pdf-data INPUT_DATA_FILE.pdf --output-format OUTPUT_DATA.csv --page 2
+tabulapycliwrapper --pdf-data INPUT_DATA_FILE.pdf --output-path OUTPUT_DATA.csv --page 2
 ```
 
 ## Dependencies:
